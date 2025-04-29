@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify, send_file
-from db import get_db_connection
+from .db import get_db_connection
 import pandas as pd
 import joblib
 import os
