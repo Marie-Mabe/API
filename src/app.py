@@ -11,7 +11,8 @@ from flask_bcrypt import Bcrypt
 
 app = Flask(__name__)
 bcrypt = Bcrypt(app)
-model = joblib.load("D:/JupyterNote/xgb_model.pkl")
+#model = joblib.load("D:/JupyterNote/xgb_model.pkl")
+model = joblib.load(os.path.join(os.path.dirname(__file__), "xgb_model.pkl"))
 print("Features utilisées par le modèle :", model.get_booster().feature_names)
 
 # Configuration de la clé secrète pour JWT
