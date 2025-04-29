@@ -2,8 +2,8 @@ import mysql.connector
 
 def get_db_connection():
     return mysql.connector.connect(
-        host="localhost",
-        user="root",  # Remplace par ton user MySQL
-        password="JeSuis12**",  # Remplace par ton mot de passe MySQL
-        database="detectfraude"
+        host="mysql-roote.alwaysdata.net",
+        user="roote",  # Remplace par ton user MySQL
+        password="azerty12**",  # Remplace par ton mot de passe MySQL
+        database="roote_detectfraude"
     )
